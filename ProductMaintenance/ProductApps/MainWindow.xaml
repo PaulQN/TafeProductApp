@@ -27,6 +27,8 @@
 
         <!-- Added TextBlock to display wrap charge -->
         <TextBlock Name="totalWrapChargeTextBlock" HorizontalAlignment="Left" Height="24" Margin="216,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Total Charge after adding &#xA;GST @10%" HorizontalAlignment="Left" Height="40" Margin="46,292,0,0" VerticalAlignment="Top" Width="156"/>
+        <TextBlock x:Name="totalGSTChargeTextBlock" HorizontalAlignment="Left" Height="24" Margin="216,308,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
 
 
 
