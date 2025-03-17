@@ -35,9 +35,13 @@ namespace ProductApps
                 cProduct.calTotalPayment();
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
 
-                // Calculate total charge including delivery fee
-                decimal totalCharge = cProduct.TotalPayment + 25.00m;
+                decimal deliveryFee = 25.00m;
+                decimal wrappingCharge = 5.00m;
+                decimal totalCharge = cProduct.TotalPayment + deliveryFee;
+                decimal totalWrapCharge = cProduct.TotalPayment + deliveryFee + wrappingCharge;
                 totalChargeTextBlock.Text = totalCharge.ToString("C");
+                totalWrapChargeTextBlock.Text = totalWrapCharge.ToString("C");
+
             }
             catch (FormatException)
             {
